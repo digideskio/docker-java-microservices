@@ -1,0 +1,82 @@
+/* app css stylesheet */
+
+#wrapper {
+    margin: 0 auto;
+    width: 650px;
+    margin-top: 50px;
+}
+
+.menu {
+    text-align: center;
+    list-style: none;
+    padding: 0 0 0.5em;
+    font-size: 40px;
+    font-weight: bolder;
+}
+
+.menu:before {
+    content: "[";
+}
+
+.menu:after {
+    content: "]";
+}
+
+.menu > li {
+    display: inline;
+}
+
+.menu > li:before {
+    content: "|";
+    padding-right: 0.3em;
+}
+
+.menu > li:nth-child(1):before {
+    content: "";
+    padding: 0;
+}
+
+/* AUTOCOMPLETE */
+
+.autocomplete{
+    width: 100%;
+    position: relative;
+}
+
+.autocomplete input{
+    font-size: 1.2em;
+    width: 100%;
+    padding:0.4em;
+}
+
+.autocomplete ul{
+    position: absolute;
+    left: 0;
+    width: 100%;
+    border-left: 1px solid #888;
+    border-right: 1px solid #888;
+    border-bottom: 1px solid #888;
+    z-index: 1;
+}
+
+.autocomplete li{
+    text-align: left;
+    list-style:none;
+    width: 100%;
+    padding:0.4em;
+    background-color: #fff;
+}
+
+.autocomplete li.active{
+    width: 100%;
+    background-color: #4bf;
+}
+
+.autocomplete .highlight {
+    background-color: #E2E2E2;
+}
+
+.autocomplete li.active .highlight {
+    background: #666;
+    color: #fff;
+}

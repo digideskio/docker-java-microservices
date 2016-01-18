@@ -1,0 +1,64 @@
+<div class="alert alert-error" ng-show="error">
+    {{errorMessage}}
+</div>
+<div class="alert alert-success" ng-show="success">
+    {{successMessage}}
+</div>
+<h3>New Account</h3>
+<form class="form-horizontal">
+    <div class="control-group">
+        <label class="control-label" for="inputAccountBal">Initial Balance</label>
+
+        <div class="controls">
+            <input type="text" id="inputAccountBal" ng-model="account.initialBalance" placeholder="" required min="1">
+        </div>
+    </div>
+    <div class="control-group">
+        <div class="controls">
+            <button type="button" class="btn btn-primary" ng-disabled="false" ng-hide="editMode" ng-click="addNewAccount(account)">Create Account</button>
+        </div>
+    </div>
+</form>
+<hr />
+<h3>Query Account</h3>
+<form class="form-horizontal">
+    <div class="control-group">
+        <label class="control-label" for="inputAccount">Account</label>
+
+        <div class="controls">
+            <input type="text" id="inputAccount" ng-model="account.accountId" placeholder="" required min="1">
+            <button type="button" class="btn btn-primary" ng-disabled="false" ng-hide="editMode" ng-click="queryAccount(account)">Query Account</button>
+        </div>
+    </div>
+</form>
+<hr />
+<h3>Money Transfer</h3>
+<form class="form-horizontal">
+    <div class="control-group">
+        <label class="control-label" for="inputAccountFrom">From Account</label>
+
+        <div class="controls">
+            <input type="text" id="inputAccountFrom" ng-model="transfer.fromAccountId" placeholder="" required min="1">
+        </div>
+    </div>
+    <div class="control-group">
+        <label class="control-label" for="inputAccountTo">To Account</label>
+
+        <div class="controls">
+            <input type="text" id="inputAccountTo" ng-model="transfer.toAccountId" placeholder="" required min="1">
+        </div>
+    </div>
+    <div class="control-group">
+        <label class="control-label" for="inputAmount">Transfer Amount</label>
+
+        <div class="controls">
+            <input type="text" id="inputAmount" ng-model="transfer.amount" placeholder="" required min="1">
+        </div>
+    </div>
+    <div class="control-group">
+        <hr />
+        <div class="controls">
+            <button type="button" class="btn btn-primary" ng-disabled="false" ng-hide="editMode" ng-click="doTransfer(transfer)">Transfer</button>
+        </div>
+    </div>
+</form>
