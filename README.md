@@ -7,9 +7,9 @@ This is an extension of this project (https://github.com/cer/event-sourcing-exam
 -   **Query an account to get the remaining balance**
 -   **Transfer money from one account to another**
 
-The purpose of this project is to show how users can automate the deployment & management of this Docker Java Microservices application on any cloud or virtualization platform. This money transfer application is an example of building and deploying microservices with event sourcing, CQRS and Docker. The application is architected to be highly scalable and available based on microservices, polyglot persistence, event sourcing (ES) and command query responsibility segregation (CQRS). Microservices applications consist of loosely coupled components that communicate using events. These components can be deployed either as separate services or packaged as a monolithic application for simplified development and testing. In this project, we focus on automating the deployment of the former -- i.e. deploying this application using separate services running on Docker containers.
+The purpose of this project is to show how users can automate the deployment & management of this Docker Java Microservices application on any cloud or virtualization platform. 
 
-To run & manage the **Event Sourcing Docker Java Microservices** application template in this project on 13 different clouds and virtualization platforms (including vSphere, OpenStack, AWS, Rackspace, Microsoft Azure, Google Compute Engine, DigitalOcean, IBM SoftLayer, etc.), make sure that you either:
+To run & manage the **Event Sourcing Docker Java Microservices** application template in this project on 18 different clouds and virtualization platforms (including vSphere, OpenStack, AWS, Rackspace, Microsoft Azure, Google Compute Engine, DigitalOcean, IBM SoftLayer, etc.), make sure that you either:
 -   **Sign Up for FREE on DCHQ.io** -- <http://dchq.io> (no credit card required), or
 -   **Download DCHQ On-Premise Standard Edition for FREE** -- <http://dchq.co/dchq-on-premise-download.html>
 
@@ -18,7 +18,6 @@ To run & manage the **Event Sourcing Docker Java Microservices** application tem
 **Table of Contents**  
 
 - [DCHQ - Event Sourcing Docker Java Microservices ](#dchq---event-sourcing-docker-java-microservices-)
-	- [Background](#background)
 	- [Obtain credentials for the Event Store](#obtain-credentials-for-the-event-store)
 	- [Applying a patch and building the JAR files](#applying-a-patch-and-building-the-jar-files)
 	- [Automating the building of Docker images from Dockerfiles in this project using DCHQ](#automating-the-building-of-docker-images-from-dockerfiles-in-this-project-using-dchq)
